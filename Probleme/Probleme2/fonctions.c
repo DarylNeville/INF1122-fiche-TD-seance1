@@ -1,123 +1,36 @@
 #include "fonctions.h"
 
-    /* Question 1  : Stockage des éléments */
-void StockageElement(int Matrice[][100], int ligne, int colonne)
+void Sortir(GtkWidget *widget, gpointer data)
 {
-    for(int i = 0; i < ligne; i++)
-    {
-        for(int j = 0; j < colonne; j++)
-        {
-            printf("Element [%d ; %d] : ",i,j);
-            scanf("%d", &Matrice[i][j]);
-        }
-    }
-
+    g_print("Challenge : Implemente le contenu qui permettra la Sortie du programme... !\n");
 }
 
-void StockageElementVecteur(int *vecteur, int taille)
+void StockageElement(GtkWidget *widget, gpointer data)
 {
-
-    for(int j = 0; j < taille; j++)
-    {
-        printf("Element %d : ",j);
-        scanf("%d", &vecteur[j]);
-    }
+    g_print("Challenge : Implemente le contenu qui permettra d'enregistrer une matrice!\n");
 }
 
-
-    /* Question 2  : Affichage des éléments  */
-void AffichageElementVecteur(int *vecteur, int taille) 
+void AffichageElementMatrice(GtkWidget *widget, gpointer data)
 {
-    for(int i = 0; i < taille; i++)
-        printf("%7d;",vecteur[i]);
-
-    printf("\n");
+    g_print("Challenge : Implemente le programme qui permettra l'Affichage d'une matrice !\n");
 }
 
-void AffichageElementMatrice(int Matrice[][100], int ligne, int colonne) 
+void AdditionMatrice(GtkWidget *widget, gpointer data)
 {
-    for(int i = 0; i < ligne; i++)
-    {
-        for(int j = 0; j < colonne; j++)
-        {
-            printf("%7d",Matrice[i][j]);
-        }
-        printf("\n");
-    }
+    g_print("Challenge : Implemente le programme qui permettra l'Addition de deux matrices !\n");
 }
 
-    /*  Question 3 : Opérations sur les matrices*/
-
-/*  a) Addition des matrices    */
-void AdditionMatrice(int A[][100], int B[][100], int ligne, int colonne)
+void SoustractionMatrice(GtkWidget *widget, gpointer data)
 {
-    int C[100][100];
-
-    for(int i = 0; i < ligne; i++)
-    {
-        for(int j = 0; j < colonne; j++)
-        {
-            C[i][j] = A[i][j] + B[i][j];
-        }
-
-    }
-
-    printf("\nLe resultat de la somme est : \n");
-    AffichageElementMatrice(C, ligne, colonne);
+    g_print("Challenge : Implemente le programme qui permettra la Soustraction de deux matrices!\n");
 }
 
-/*  b)  Soustraction des matrices*/
-void SoustractionMatrice(int A[][100], int B[][100], int ligne, int colonne)
+void MultiplicationMatrice(GtkWidget *widget, gpointer data)
 {
-    int C[100][100];
-
-    for(int i = 0; i < ligne; i++)
-    {
-        for(int j = 0; j < colonne; j++)
-        {
-            C[i][j] = A[i][j] - B[i][j];
-        }
-
-    }
-
-    printf("\nLe resultat de la soustraction est : \n");
-    AffichageElementMatrice(C, ligne, colonne);
-
+    g_print("Challenge : Implemente le programme qui permettra la Multiplication de deux matrices !\n");
 }
 
-/*  c)  Multiplications des matrices*/
-void MultiplicationMatrice(int A[][100], int B[][100], int ligne, int colonne)
+void ProduitMatriceVecteur(GtkWidget *widget, gpointer data)
 {
-    int C[100][100];
-
-    for(int i = 0; i < ligne; i++)
-    {
-        for(int j = 0; j < colonne; j++)
-        {
-            C[i][j] = A[i][j] * B[i][j];
-        }
-
-    }
-
-    printf("\nLe resultat de la Multiplication est : \n");
-    AffichageElementMatrice(C, ligne, colonne);
-
-}
-
-
-    /*  Question 4  : Produit Matrice Vecteur   */
-void ProduitMatriceVecteur(int Matrice[][100], int ligne, int colonne, int *vecteur)
-{
-    int b[100] = {0};
-
-    for(int i=0 ; i<ligne ; i++)
-    {
-        for(int k=0 ; k<colonne; k++)
-        {
-            b[i] = b[i] + (Matrice[i][k] * vecteur[k]);
-        }
-    }
-
-    printf("\nLe resultat du produit Matrice - Vecteur est : \n");
-    AffichageElementVecteur(b, colonne);
+    g_print("Challenge : Implemente le programme qui permettra le Produit entre matrice et vecteur !\n");
 }
