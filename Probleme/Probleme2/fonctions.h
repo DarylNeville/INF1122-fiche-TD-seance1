@@ -1,17 +1,15 @@
 #ifndef __FONCTIONS_H__
 #define __FONCTIONS_H__
 
-    #include <stdio.h>
+    #include <gtk/gtk.h>
 
     /*  Declaration des fonctions que seront utilisées  */
 
-    void StockageElement(int Matrice[][100], int ligne, int colonne);
-    void StockageElementVecteur(int *vecteur, int taille);
-    void AffichageElementVecteur(int *vecteur, int taille);
-    void AffichageElementMatrice(int Matrice[][100], int ligne, int colonne);
-    void AdditionMatrice(int A[][100], int B[][100], int ligne, int colonne);
-    void SoustractionMatrice(int A[][100], int B[][100], int ligne, int colonne);
-    void MultiplicationMatrice(int A[][100], int B[][100], int ligne, int colonne);
-    void ProduitMatriceVecteur(int Matrice[][100], int ligne, int colonne, int *vecteur);
-
+void Sortir(GtkWidget *widget, gpointer data);
+void StockageElement(GtkWidget *widget, gpointer data);
+void AffichageElementMatrice(GtkWidget *widget, gpointer data);
+void AdditionMatrice(GtkWidget *widget, gpointer data);
+void SoustractionMatrice(GtkWidget *widget, gpointer data);
+void MultiplicationMatrice(GtkWidget *widget, gpointer data);
+void ProduitMatriceVecteur(GtkWidget *widget, gpointer data);
 #endif
