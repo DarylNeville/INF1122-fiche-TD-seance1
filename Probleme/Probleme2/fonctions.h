@@ -12,4 +12,6 @@ void AdditionMatrice(GtkWidget *widget, gpointer data);
 void SoustractionMatrice(GtkWidget *widget, gpointer data);
 void MultiplicationMatrice(GtkWidget *widget, gpointer data);
 void ProduitMatriceVecteur(GtkWidget *widget, gpointer data);
+
+
 #endif

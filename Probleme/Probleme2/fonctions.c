@@ -2,8 +2,7 @@
 
 void Sortir(GtkWidget *widget, gpointer data)
 {
-    g_print("Sortie du programme... !\n");
-    return;
+    g_print("Challenge : Implemente le contenu qui permettra la Sortie du programme... !\n");
 }
 
 void StockageElement(GtkWidget *widget, gpointer data)
