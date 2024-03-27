@@ -1,7 +1,6 @@
 #include "fonctions.h"
 
 
-    /*  Question 5 : main*/
 int main(int argc, char *argv[])
 {
     extern int n, m, choix, Matrice[100][100], A[100][100], B[100][100], vecteur[100];
