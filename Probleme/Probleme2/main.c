@@ -5,14 +5,14 @@
 int main(int argc, char *argv[])
 {
     
-    int n, m, choix, Matrice[100][100], A[100][100], B[100][100], vecteur[100];
+    extern int n, m, choix, Matrice[100][100], A[100][100], B[100][100], vecteur[100];
 
     // Initialisation de GTK+
     gtk_init(&argc, &argv);
 
     // Création de la fenêtre principale
     GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(window), "Made By NK");
+    gtk_window_set_title(GTK_WINDOW(window), "Exercice sur les matrices");
     gtk_widget_set_size_request(window, 250, 150);
     g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
